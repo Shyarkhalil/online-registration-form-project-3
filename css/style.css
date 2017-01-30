@@ -1,0 +1,575 @@
+
+
+/***************************
+   GENERAL STYLE
+ ****************************/
+
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body, option, button[type="submit"] {
+  font-family: 'Merriweather', sans-serif;
+}
+
+
+h2 {
+  font-size: 1.25rem;
+  margin:  0;
+  padding: 18px 0 0;
+  color: rgba(45, 57, 69, 0.88);
+  font-weight:800;
+}
+
+
+#get,
+#copyright,
+h2,
+h1 {
+  text-align:center;
+} 
+
+
+#get {
+  margin: 13px 0 0;
+  color:#b7bcbf;
+  padding-bottom: 42px;
+  font-size: .89rem;
+}
+
+
+.border-bottom {
+  border-bottom: 5px solid #2d3945;
+  margin: 0 0 4px;
+}
+
+.container {
+  max-width: 1024px;
+  width: 95%;
+  margin: 0 auto; 
+  padding: 10px;
+}
+
+
+
+header {
+  padding: 14px 0;
+  font-size: .65rem;
+  background: #2d3945;
+  color: #fff;
+}
+
+
+
+/**********************************
+          Form Style
+**********************************/
+
+
+
+form {
+  background: #fff;
+  margin-top: -1px;
+  border-top: 2px solid #2d3945; 
+}
+
+
+#border {
+  border-bottom:2px solid #2d3945;
+  padding-bottom: 25px;
+}
+
+
+legend {
+  width: 100%;
+  padding: 15px 0;
+  color: rgba(45, 57, 69, 0.91);
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+
+
+label[for="name"],
+label[for="mail"],
+label[for="phone"],
+label[for="city"],
+label[for="address"],
+label[for="state"],
+label[for="zip"] {
+  margin: 15px 0 7px;
+}
+
+
+
+input[id="name"],
+input[id="mail"],
+input[id="phone"],
+input[id="city"],
+input[id="address"]{
+  padding: 18px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+
+label {
+  color: rgba(73, 93, 112, 0.81);
+  display:inline-block;
+}
+
+#copyright {
+  color: rgba(73, 93, 112, 0.81);
+  font-size: .85rem;
+  font-style:italic;
+}
+
+#format {
+   margin: 15px 0 3px;
+   padding: 0;
+   color: rgba(73, 93, 112, 0.81);
+   display:block;
+}
+
+#recieve {
+  font-size: .89rem;
+  line-height: 25px;
+  font-weight: 500;
+  margin: 5px 0 10px;
+  color: rgba(73, 93, 112, 0.81);
+}
+
+
+label[for="topics"] {
+  margin: 20px 0 10px;
+  font-size: .93rem;
+  font-weight: 500;
+}
+
+#topics {
+  width: 100%;
+  height: 112px;
+  border-radius: 4px;
+  resize: none;
+  padding: 15px;
+}
+
+
+label[for="html"], 
+label[for="css"],
+label[for="javascript"],
+label[for="html-format"], 
+label[for="plain"] {
+  margin: 9px;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  border: none;
+  margin: 6px 0;
+  display:block;
+  background: #eff0f1;
+  
+}
+ 
+
+fieldset {
+  border: 0;
+  margin: 15px 0;
+  padding: 0;
+}
+
+
+select {
+  width: 100%;
+  padding: 18px;
+  border-radius: 4px;
+  color: rgba(153, 153, 153, 0.95);
+}
+
+
+
+/********************************
+Placeholder style across most browsers
+************************************/
+
+
+
+::-webkit-input-placeholder {
+  font-size: .80rem;
+  font-style:italic; 
+  color:rgba(153, 153, 153, 0.60);
+  text-align: right;
+}
+
+
+:-moz-placeholder {
+  font-size: .80rem;
+  font-style:italic; 
+  color:rgba(153, 153, 153, 0.60);
+  text-align: right;
+
+}
+
+::-moz-placeholder {
+  font-size: .80rem;
+  font-style:italic; 
+  color:rgba(153, 153, 153, 0.60);
+  text-align: right;
+}
+
+
+
+:-ms-input-placeholder {
+  font-size: .80rem;
+  font-style:italic; 
+  color:rgba(153, 153, 153, 0.60);
+  text-align: right;
+}
+
+
+
+
+/**************************
+   Submit button style
+**************************/
+
+
+
+button[type="submit"] {
+  display: inline-block;
+  width: 100%;
+  text-align:center;
+  background-color: #275c59;
+  color: #fff;
+  border:none;
+  border-radius: 4px;
+  height: 65px;
+  margin: 13px 0;
+  font-size: 1.3rem;
+  font-weight:600;
+	cursor: pointer;
+}
+
+
+button[type="submit"]:hover { 
+  color: #fff;
+	background-color:  #4ebbb5;
+}
+
+
+/********************************
+         ZIP STYLE
+********************************/
+
+input[id="zip"] {
+  border-radius: 4px;
+  width: 55%;
+  padding: 18px 22px;
+}
+
+
+
+input:focus,
+textarea:focus, 
+select:focus,
+button:focus,
+label[for="zip"]:focus {
+  outline-color:  #46698b;
+}
+
+
+
+
+
+
+/****************************
+       Media Queries
+****************************/
+
+
+@media (min-width: 768px) {
+  
+ 
+.container {
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.87);
+ }
+
+
+h2 {
+  padding: 40px 0 0;
+ }
+
+
+legend {
+     padding: 20px 0;
+ }
+
+
+ label[for="name"],
+label[for="mail"], 
+label[for="phone"], 
+label[for="city"], 
+label[for="address"],
+label[for="state"],
+label[for="zip"]  {
+   float: left;
+   display:block;
+   margin: 30px 0;
+   clear:both;
+ }
+
+
+input[type="text"],
+input[type="email"], 
+input[type="tel"], 
+textarea, 
+select  {
+  width: 200px;
+  float: left;
+  margin: 10px 0;
+  background: #eff0f1;
+  -webkit-transition: all 1s ease-in-out;
+}
+
+
+
+input[type="text"]:focus,
+input[type="email"]:focus, 
+input[type="tel"]:focus, 
+textarea:focus, 
+select:focus {
+  background-color: rgba(210, 219, 243, 0.63);
+  width: 435px;
+  color: #2d3945;
+  font-weight: 700;
+  box-shadow: 1px 0px 30px 11px rgb(5, 111, 132);
+  outline: none;
+} 
+
+
+
+
+#name {
+  margin-left: 60px;
+}
+
+
+#mail, #address {
+ margin-left: 27px;
+}
+
+
+#phone {
+ margin-left: 22px;
+}
+
+
+#city {
+ margin-left: 111px;
+}
+
+
+#state {
+ margin-left: 100px;  
+}
+
+
+#zip {
+   width: 25%;
+   float: left;
+   margin-left: 70px;
+ }
+
+
+body {
+  background-image: url('../img/apple.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment:fixed;
+}
+
+
+form {
+    background: rgba(255, 255, 255, 0);
+    color: #000;
+}
+
+
+label,
+#recieve,
+#format,
+#get,
+legend,
+h2 {
+    color: #fff;
+    font-weight:600;
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+  }
+
+
+
+label[for="contact"],
+#recieve,
+#get  {
+  font-size: .95rem;
+}
+
+
+#get {
+  padding-bottom: 39px;
+}
+
+
+  #border, .border-bottom {
+   border-bottom-color: rgb(35, 161, 185);
+}
+ 
+
+form {
+  border-top-color: rgb(35, 161, 185);
+}
+
+/**********************
+***Checkbox style******
+***********************/
+
+
+ 
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  cursor: pointer; 
+  display: inline-block;
+   margin-left: 8px;
+}
+
+input[type="checkbox"] + label:before {
+    content: "";
+    border: 3px solid rgb(35, 161, 185);
+    display: inline-block;
+    height: 19px;
+    width: 19px;
+    line-height: 12px;
+    text-align: center;
+    margin-right: 18px;
+    margin-top: -3px;
+    vertical-align: middle;
+    font-size: 1.70rem;
+}
+
+input[type="checkbox"]:checked + label:before {
+  content: "\2714";
+  font-size: 1rem;
+  
+}
+
+
+/*****************************
+         Radio Style
+*****************************/
+
+input[type="radio"] {
+  display: none;
+}
+
+
+
+input[type="radio"] + label:before {
+    content: "";
+    background-color: rgb(35, 161, 185);
+    border: 1px solid rgb(35, 161, 185);
+    border-radius: 7px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    line-height: 12px;
+    text-align: center;
+    margin-right: 18px;
+    margin-top: -3px;
+    vertical-align: middle;
+    font-size: 1.70rem;
+}
+
+input[type="radio"]:checked + label:before {
+  content: "\2022";
+  
+}
+
+
+
+/******************************
+        Button Style
+******************************/
+
+button[type="submit"] {
+  background-color: rgb(5, 111, 132);
+  -webkit-transition: all .3s ease-in-out;
+}
+
+
+button[type="submit"]:hover { 
+	background-color: rgb(73, 172, 191);
+}
+
+/********************************
+Placeholder style across most browsers
+************************************/
+
+
+
+::-webkit-input-placeholder { 
+  color:rgba(153, 153, 153, 1);
+}
+
+:-moz-placeholder {
+  color:rgba(153, 153, 153, 1);
+}
+
+::-moz-placeholder {
+  color:rgba(153, 153, 153, 1);
+}
+
+:-ms-input-placeholder { 
+  color:rgba(153, 153, 153, 1);
+}
+
+
+
+
+
+/************************
+        footer
+*************************/
+
+
+
+ #copyright {
+    color: #fff;
+    font-size: .85rem;
+    font-style: italic;
+    margin-bottom: 30px;
+    }
+
+
+}
+
+
+
+
+
